@@ -1,0 +1,15 @@
+{
+  "name": "fastfanout",
+  "version": "1.0.0",
+  "description": "a redis pub sub ffo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^5.9.0",
+    "ws": "^8.18.3"
+  }
+}

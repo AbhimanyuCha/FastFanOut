@@ -1,15 +1,12 @@
 {
   "name": "fastfanout",
   "version": "1.0.0",
-  "description": "a redis pub sub ffo",
-  "main": "index.js",
+  "main": "server/wsServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/wsServer.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "redis": "^5.9.0",
+    "redis": "^4.6.7",
     "ws": "^8.18.3"
   }
 }

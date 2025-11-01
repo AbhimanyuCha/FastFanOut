@@ -2,6 +2,7 @@ const { createClient } = require("redis");
 
 const publisher = createClient({ url: "redis://localhost:6379" });
 const subscriber = createClient({ url: "redis://localhost:6379" });
+const store = createClient({ url: "redis://localhost:6379" });
 
 async function initRedis() {
   try {
@@ -15,4 +16,4 @@ async function initRedis() {
 
 initRedis();
 
-module.exports = { publisher, subscriber };
+module.exports = { publisher, subscriber, store };
